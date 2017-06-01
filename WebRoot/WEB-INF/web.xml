@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5"
+	 xmlns="http://java.sun.com/xml/ns/javaee" 
+	 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	 xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"> 
+	
+	<servlet>
+		<description>This is the description of my Application contents</description>
+		<display-name>LoginForStudent</display-name>
+		<servlet-name>LoginForStudent</servlet-name>
+		<servlet-class>action.LoginForStudent</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my Application contents</description>
+		<display-name>LoginForAdmin</display-name>
+		<servlet-name>LoginForAdmin</servlet-name>
+		<servlet-class>action.LoginForAdmin</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<description>This is the description of my Application contents</description>
+		<display-name>Register</display-name>
+		<servlet-name>Register</servlet-name>
+		<servlet-class>action.Register</servlet-class>
+	</servlet>
+	
+	<servlet>
+	<servlet-name>FindAnnounceById</servlet-name>
+	<servlet-class>action.FindAnnounceById</servlet-class>
+	</servlet>
+	
+	<servlet>
+	<servlet-name>UpdateAnnounce</servlet-name>
+	<servlet-class>action.UpdateAnnounce</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>AddAnnounce</servlet-name>
+		<servlet-class>action.AddAnnounce</servlet-class>
+	</servlet>
+	
+	<servlet>
+	<servlet-name>Logout</servlet-name>
+	<servlet-class>action.Logout</servlet-class>
+	</servlet>
+	
+	<servlet>
+	<servlet-name>DeleteAnnounce</servlet-name>
+	<servlet-class>action.DeleteAnnounce</servlet-class>
+	</servlet>
+	
+	<servlet>
+	<servlet-name>AddComment</servlet-name>
+	<servlet-class>action.AddComment</servlet-class>
+	</servlet>
+	
+	
+	
+	<servlet-mapping>
+		<servlet-name>LoginForStudent</servlet-name>
+		<url-pattern>/LoginForStudent</url-pattern>    
+	</servlet-mapping>
+	
+	<servlet-mapping>
+	<servlet-name>LoginForAdmin</servlet-name>
+	<url-pattern>/LoginForAdmin</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>Register</servlet-name>
+		<url-pattern>/Register</url-pattern>    
+	</servlet-mapping>
+	
+	<servlet-mapping>
+	<servlet-name>FindAnnounceById</servlet-name>
+	<url-pattern>/FindAnnounceById</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+	<servlet-name>UpdateAnnounce</servlet-name>
+	<url-pattern>/UpdateAnnounce</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet-mapping>
+	<servlet-name>AddAnnounce</servlet-name>
+	<url-pattern>/AddAnnounce</url-pattern>
+	</servlet-mapping>
+	
+		<servlet-mapping>
+	<servlet-name>Logout</servlet-name>
+	<url-pattern>/Logout</url-pattern>
+	</servlet-mapping>
+		<servlet-mapping>
+	<servlet-name>DeleteAnnounce</servlet-name>
+	<url-pattern>/DeleteAnnounce</url-pattern>
+	</servlet-mapping>
+		<servlet-mapping>
+	<servlet-name>AddComment</servlet-name>
+	<url-pattern>/AddComment</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+	
+	
+	<welcome-file-list>
+	<welcome-file>userLogin.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>
